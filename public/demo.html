@@ -12,9 +12,9 @@
             <aside>
                 <h2>Share Your Favorites</h2>
                 <h3>Share your favorite ways to use sweet potatoes</h3>
-                <form>
-                    <input type="text" name="first-name" placeholder="First Name"/>
-                    <textarea rows="4" name="description">Describe your favorite use of sweet potatoes.</textarea>
+                <form action="/comments" method="POST">
+                    <input type="text" name="name" placeholder="First Name"/>
+                    <textarea rows="4" name="comment">Describe your favorite use of sweet potatoes.</textarea>
                     <input type="submit" value="Submit"/>
                     <!--
                     <input id="name"/>
@@ -25,7 +25,6 @@
 
             </aside>
             <article>
-                <section id="suggestions"></section>
                 <h2>Comments</h2>
                 <h3>The best vegetable there is</h3>
                 <p>
@@ -52,9 +51,17 @@
                     <li>Interdum et malesuada fames ac ante ipsum primis in faucibus.</li>
                 </ul>
             </article>
+
+            <section id="suggestions">
+                <h2>Comments</h2>
+
+            </section>
+
             <footer>
                 <p>Developed by Juliano</p>
             </footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
